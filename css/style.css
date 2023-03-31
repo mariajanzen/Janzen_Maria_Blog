@@ -1,1 +1,107 @@
+body{
+    background-color:  #f5f5fb;
+}
+
+.container{
+    display: grid;
+    height: 100%;
+
+    grid-template-rows: 1fr 2fr 10fr 1fr;
+    grid-template-areas:
+    "hd"
+    "sd"
+    "main"
+    "ft";
+}
+.box{
+    /*border: 1px solid saddlebrown;*/
+    background: #f5f5fb;
+}
+
+.header{
+    grid-area: hd;
+}
+
+.footer{
+    grid-area: ft;
+}
+
+.sidebar{
+    grid-area: sd;
+}
+
+.content{
+    grid-area: main;
+}
+
+#nestedGrid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    grid-gap: 2px;
+    /*border: 3px solid bisque;*/
+}
+
+.photoBox{
+    width: 210px;
+    height: 320px;
+    /*border: 1px solid saddlebrown;*/
+    background: #f5f5fb;
+    color: #1f1f1f;
+    font-family: "Goudy Old Style";
+    text-justify: auto;
+    text-align: center;
+    /*text-underline: #1f1f1f;*/
+}
+
+#one{
+    background-image: url("images/Austria_3.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#two{
+    background-image: url("images/Austria_4.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#three{
+    background-image: url("images/Austria_1.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#four{
+    background-image: url("images/Austria_2.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+/* Medium Screens */
+@media(min-width: 600px) and (max-width: 1100px){
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 50px 600px 50px;
+        grid-template-areas:
+        "hd hd hd hd hd hd hd hd"
+        "sd main main main main main main main"
+        "ft ft ft ft ft ft ft ft";
+        /*border: 5px solid rosybrown;*/
+    }
+}
+
+/* Large Screens */
+@media(min-width: 1101px){
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 50px 600px 50px;
+        grid-template-areas:
+        "hd hd hd hd hd hd hd hd"
+        "sd sd main main main main main main"
+        "ft ft ft ft ft ft ft ft";
+        /*border: 5px solid cornflowerblue;*/
+    }
+}
+
 
