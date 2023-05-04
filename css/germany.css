@@ -63,31 +63,6 @@ body{
     grid-area: main;
 }
 
-#one{
-    background-image: url("images/Austria_3.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-#two{
-    background-image: url("images/Austria_1.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-#three{
-    background-image: url("images/Austria_2.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-#four{
-    background-image: url("images/Austria_4.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-#textBlock{
-    font-family: "Baskerville Old Face";
-}
-
 #direction{
     display: flex;
     flex-wrap: wrap;
@@ -104,5 +79,32 @@ body{
     /*text-underline: #1f1f1f;*/
 }
 
+h1{
+    padding: 5px;
+}
 
+#one{
+    background-image: url("images/Germany_4.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#two{
+    background-image: url("images/Germany_3.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#three{
+    background-image: url("images/Germany_2.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#four{
+    background-image: url("images/Germany_1.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
 
+#textBlock{
+    padding: 10px;
+    font-family: "Baskerville Old Face";
+}
