@@ -1,0 +1,103 @@
+body{
+    background-color:  #f5f5fb;
+}
+
+.container{
+    display: grid;
+    height: 100%;
+    grid-template-rows: 1fr 6fr 10fr 1fr;
+    grid-template-areas:
+    "hd"
+    "fb"
+    "main"
+    "ft";
+}
+.box{
+    /*border: 1px solid saddlebrown;*/
+    background: #f5f5fb;
+}
+
+.header{
+    grid-area: hd;
+}
+
+.footer{
+    grid-area: ft;
+}
+
+.fotoBlock{
+    grid-area: fb;
+}
+
+.content{
+    grid-area: main;
+}
+
+#nestedGrid{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    grid-gap: 2px;
+    /*border: 3px solid bisque;*/
+}
+
+.fotoBlock{
+    display: block;
+}
+
+.photoBox{
+    width: 210px;
+    height: 400px;
+    /*border: 1px solid saddlebrown;*/
+    background: #f5f5fb;
+    color: #1f1f1f;
+    /*text-underline: #1f1f1f;*/
+}
+h1{
+    padding: 5px;
+}
+
+#one{
+    background-image: url("images/See.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#two{
+    background-image: url("images/Amsterdam.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#textBlock{
+    padding: 10px;
+    font-family: "Baskerville Old Face";
+}
+
+
+/* Medium Screens */
+@media(min-width: 600px) and (max-width: 1100px){
+    .container{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 100px 1200px 50px;
+        grid-template-areas:
+        "hd hd hd hd"
+        "sd sd main main"
+        "ft ft ft ft";
+        /*border: 5px solid rosybrown;*/
+    }
+}
+
+/* Large Screens */
+@media(min-width: 1101px){
+    .container {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 100px 800px 100px;
+        grid-template-areas:
+        "hd hd hd hd"
+        "sd sd main main"
+        "ft ft ft ft";
+        /*border: 5px solid cornflowerblue;*/
+    }
+}

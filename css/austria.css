@@ -1,0 +1,117 @@
+body{
+    background-color:  #f5f5fb;
+}
+
+.container{
+    display: grid;
+    height: 100%;
+    grid-template-rows: 2fr 4fr 16fr 2fr;
+    grid-template-areas:
+    "hd"
+    "fb"
+    "main"
+    "ft";
+}
+.box{
+    /*border: 1px solid saddlebrown;*/
+    background: #f5f5fb;
+}
+
+.header{
+    grid-area: hd;
+}
+
+.footer{
+    grid-area: ft;
+}
+
+.fotoBlock{
+    grid-area: fb;
+}
+
+.content{
+    grid-area: main;
+}
+
+#nestedGrid{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 100%;
+    grid-gap: 2px;
+    /*border: 3px solid bisque;*/
+}
+
+.fotoBlock{
+    display: block;
+}
+
+.photoBox{
+    width: 210px;
+    height: 400px;
+    /*border: 1px solid saddlebrown;*/
+    background: #f5f5fb;
+    color: #1f1f1f;
+    /*text-underline: #1f1f1f;*/
+}
+h1{
+    padding: 5px;
+}
+
+#one{
+    background-image: url("images/Austria_3.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#two{
+    background-image: url("images/Austria_1.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#three{
+    background-image: url("images/Austria_2.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#four{
+    background-image: url("images/Austria_4.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#textBlock{
+    padding: 10px;
+    font-family: "Baskerville Old Face";
+}
+
+
+/* Medium Screens */
+@media(min-width: 600px) and (max-width: 1100px){
+    .container {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 100px 300px 1000px 100px;
+        grid-template-areas:
+        "hd"
+        "fb"
+        "main"
+        "ft";
+        /*border: 5px solid cornflowerblue;*/
+    }
+}
+
+/* Large Screens */
+@media(min-width: 1101px){
+    .container {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 100px 300px 800px 100px;
+        grid-template-areas:
+        "hd"
+        "fb"
+        "main"
+        "ft";
+        /*border: 5px solid cornflowerblue;*/
+    }
+}
+
+
