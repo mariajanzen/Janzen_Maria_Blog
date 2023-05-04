@@ -1,0 +1,108 @@
+body{
+    background-color:  #f5f5fb;
+}
+
+/* Small Screens */
+@media(min-width: 280px) and (max-width: 412px){
+    .container{
+        display: grid;
+        height: 100%;
+        grid-template-rows: 100px 1300px 2300px 100px;
+        grid-template-columns: auto;
+        grid-template-areas:
+        "hd"
+        "fb"
+        "main"
+        "ft";
+    }
+}
+
+/* Medium Screens */
+@media(min-width: 413px) and (max-width: 900px){
+    .container {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 100px 350px 350px 1250px 100px;
+        grid-template-areas:
+        "hd"
+        "fb"
+        "fb"
+        "main"
+        "ft";
+        /*border: 5px solid cornflowerblue;*/
+    }
+}
+
+/* Large Screens */
+@media(min-width: 901px){
+    .container {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 100px 300px 800px 100px;
+        grid-template-areas:
+        "hd"
+        "fb"
+        "main"
+        "ft";
+    }
+}
+
+.header{
+    grid-area: hd;
+}
+
+.footer{
+    grid-area: ft;
+}
+
+.fotoBlock{
+    grid-area: fb;
+}
+
+.content{
+    grid-area: main;
+}
+
+#one{
+    background-image: url("images/Austria_3.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#two{
+    background-image: url("images/Austria_1.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#three{
+    background-image: url("images/Austria_2.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#four{
+    background-image: url("images/Austria_4.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#textBlock{
+    font-family: "Baskerville Old Face";
+}
+
+#direction{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+.photoBox{
+    width: 210px;
+    height: 340px;
+    /*border: 1px solid saddlebrown;*/
+    background: #f5f5fb;
+    color: #1f1f1f;
+    margin-right: 10px;
+    /*text-underline: #1f1f1f;*/
+}
+
+
+

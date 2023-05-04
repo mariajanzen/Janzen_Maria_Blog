@@ -1,0 +1,141 @@
+body{
+    background-color:  #f5f5fb;
+}
+
+.container{
+    display: grid;
+    height: 100%;
+    grid-template-rows: 100px 700px 700px 100px;
+    grid-template-columns: auto;
+    grid-template-areas:
+    "hd"
+    "main"
+    "sd"
+    "ft";
+}
+/* Small Screens */
+@media(min-width: 280px) and (max-width: 412px){
+    .container{
+        display: grid;
+        height: 100%;
+        grid-template-rows: 100px 1250px 1200px 100px;
+        grid-template-columns: auto;
+        grid-template-areas:
+        "hd"
+        "main"
+        "sd"
+        "ft";
+    }
+}
+
+/* Medium Screens */
+@media(min-width: 413px) and (max-width: 800px){
+    .container{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 100px 1200px 100px;
+        grid-template-areas:
+        "hd hd hd hd"
+        "sd sd main main"
+        "ft ft ft ft";
+    }
+}
+
+/* Large Screens */
+@media(min-width: 801px){
+    .container {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 100px 800px 100px;
+        grid-template-areas:
+        "hd hd hd hd"
+        "sd sd main main"
+        "ft ft ft ft";
+    }
+}
+
+.header{
+    grid-area: hd;
+}
+
+.footer{
+    grid-area: ft;
+}
+
+.sidebar{
+    grid-area: sd;
+}
+
+.content{
+    grid-area: main;
+}
+
+.sidebar{
+    display: block;
+}
+
+#direction{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+.photoBox{
+    width: 210px;
+    height: 310px;
+    /*border: 1px solid saddlebrown;*/
+    background: #f5f5fb;
+    color: #1f1f1f;
+    /*text-underline: #1f1f1f;*/
+}
+
+h2{
+    background-color: aliceblue;
+    text-justify: unset;
+    text-align: center;
+    font-family: "Goudy Old Style";
+}
+
+p{
+    margin: 0 0 1em 0;
+}
+
+#one{
+    background-image: url("images/Austria_3.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#two{
+    background-image: url("images/Germany_1.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#three{
+    background-image: url("images/PortugalImage.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#four{
+    background-image: url("images/Denmark_1.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#textBlock{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+#traveller{
+    background-color: darkcyan;
+    border: none;
+    color: white;
+    padding: 12px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+
