@@ -72,11 +72,11 @@ body{
     grid-area: ft;
 }
 
-.fotoBlock{
+.photoBlock{
     grid-area: fb;
 }
 
-.content{
+.contentBox{
     grid-area: main;
 }
 
@@ -160,42 +160,31 @@ ul{
     color: black;
 }
 
-#nestedGrid{
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 50% 50%;
-    grid-gap: 2px;
-    /*border: 3px solid bisque;*/
+.photoBlock{
+    display: flex;
+    flex-direction: column;
 }
 
-.fotoBlock{
-    display: block;
-}
-
-.photoBox{
-    width: 210px;
-    height: 400px;
-    /*border: 1px solid saddlebrown;*/
-    background: #f5f5fb;
-    color: #1f1f1f;
-    /*text-underline: #1f1f1f;*/
-}
 h1{
     padding: 5px;
-}
-
-#one{
-    background-image: url("images/See.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-#two{
-    background-image: url("images/MJ.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
 }
 
 #textBlock{
     padding: 10px;
     font-family: "Baskerville Old Face";
+}
+
+figure {
+    float: right;
+    width: 80%;
+    text-align: center;
+    font-style: italic;
+    font-size: smaller;
+    text-indent: 0;
+    border: thin silver solid;
+    margin: 0.5em;
+    padding: 0.5em;
+}
+img.scaled {
+    width: 100%;
 }
