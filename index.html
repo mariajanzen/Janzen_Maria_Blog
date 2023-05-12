@@ -8,12 +8,41 @@
         name="viewport"
     />
     <link rel="stylesheet" href="css/index_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <div class="container">
         <div class="header box">
-            <div id="About" class = "header">
-                <h1>Mary's Blog</h1>
+            <div id="About" class = "headerContainer">
+                <div class="card">
+                    <img src="css/images/MJ_3.jpg" alt="Avatar" style="width:70%">
+                    <div class="title">
+                        <h4><b>Maria Janzen</b></h4>
+                        <p>Travel Blogger</p>
+                    </div>
+                </div>
+                <div class="headerText"><h1>Mary's Blog</h1></div>
+            </div>
+            <div class="topnav">
+                <ul id="navblock">
+                    <li id="homeBlock">
+                        <a id="active" href="index.html">Home</a>
+                    </li>
+                    <li id="aboutBlock">
+                        <a href="travellers.html">About</a>
+                    </li>
+                    <li id="countriesBlock">
+                        <div class="dropdown">
+                            <button class="dropbtn">Countries</button>
+                            <div class="dropdown-content">
+                                <a href="countries/austria.html">Austria</a>
+                                <a href="countries/denmark.html">Denmark</a>
+                                <a href="countries/germany.html">Germany</a>
+                                <a href="countries/portugal.html">Portugal</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
         <div class="content">
@@ -39,11 +68,14 @@
                         <h3>More About Travellers</h3>
                     </a>
                 </button>
+                <div class ="sidebarText"><p><em>To find more about the author, navigate to the site Information about our Travellers</em></p>
             </div>
                 <article class="sidebar text" id="textBlock">
-                    <p>There is some introduction to the blog. The text tells about different beautiful places in the world. There is some introduction to the blog. The text tells about different beautiful places in the world. There is some introduction to the blog. There is some introduction to the blog. The text tells about different beautiful places in the world. There is some introduction to the blog. The text tells about different beautiful places in the world. There is some introduction to the blog. The text tells about different beautiful places in the world. There is some introduction to the blog. The text tells about different beautiful places in the world.</p>
-                    <p>There is some introduction to the blog. The text tells about different beautiful places in the world. There is some introduction to the blog. The text tells about different beautiful places in the world. There is some introduction to the blog. The text tells about different beautiful places in the world. The text tells about different beautiful places in the world. There is some introduction to the blog. The text tells about different beautiful places in the world. There is some introduction to the blog. The text tells about different beautiful places in the world. There is some introduction to the blog. The text tells about different beautiful places in the world. There is some introduction to the blog. The text tells about different beautiful places in the world.</p>
-                    <p>There is some introduction to the blog. The text tells about different beautiful places in the world. There is some introduction to the blog. The text tells about different beautiful places in the world. There is some introduction to the blog. The text tells about different beautiful places in the world. There is some introduction to the blog. The text tells about different beautiful places in the world. There is some introduction to the blog. The text tells about different beautiful places in the world. There is some introduction to the blog. The text tells about different beautiful places in the world. There is some introduction to the blog. The text tells about different beautiful places in the world.</p>
+                    <p>There is some introduction to the blog.
+                        <u>The text tells about different beautiful places in the world.</u>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
+                    <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man</p>
                 </article>
             </div>
         </div>
@@ -51,6 +83,10 @@
             <a href="index.html">Go Home</a>
             <div class="impressum"><h3>Impressum</h3>
                 <p>2020-2023 Maria Janzen, Paderborn, Germany</p>
+            </div>
+            <div class="socialMedia">
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-linkedin"></a>
             </div>
         </div>
     </div>

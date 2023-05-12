@@ -8,11 +8,36 @@
             name="viewport"
     />
     <link rel="stylesheet" href="../css/denmark.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 <div class = "container">
-    <div class = "header box"><h1>Denmark</h1></div>
-    <div id="About" class = "header"></div>
+    <div class="headerBox">
+        <div class = "headerContainer">
+            <div class="headerText"><h1>Denmark</h1></div>
+        </div>
+        <div class="topnav">
+            <ul id="navblock">
+                <li id="homeBlock">
+                    <a href="../index.html">Home</a>
+                </li>
+                <li id="aboutBlock">
+                    <a href="../travellers.html">About</a>
+                </li>
+                <li id="countriesBlock">
+                    <div class="dropdown">
+                        <button class="dropbtn" id="active">Countries</button>
+                        <div class="dropdown-content">
+                            <a href="../countries/austria.html">Austria</a>
+                            <a class="active" href="../countries/denmark.html">Denmark</a>
+                            <a href="../countries/germany.html">Germany</a>
+                            <a href="../countries/portugal.html">Portugal</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
     <div class = "fotoBlock">
         <ul id="direction">
             <li id="one" class = "photoBox"></li>
@@ -37,6 +62,10 @@
         <a href="../index.html">Go Home</a>
         <div class="impressum"><h3>Impressum</h3>
             <p>2020-2023 Maria Janzen, Paderborn, Germany</p>
+        </div>
+        <div class="socialMedia">
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-linkedin"></a>
         </div>
     </div>
 </div>
