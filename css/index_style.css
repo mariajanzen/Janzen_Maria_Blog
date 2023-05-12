@@ -29,7 +29,7 @@ body{
     }
 }
 /* Small Screens */
-@media(min-width: 321px) and (max-width: 510px){
+@media(min-width: 321px) and (max-width: 610px){
     .container{
         display: grid;
         height: 100%;
@@ -44,11 +44,11 @@ body{
 }
 
 /* Medium Screens */
-@media(min-width: 511px) and (max-width: 800px){
+@media(min-width: 611px) and (max-width: 900px){
     .container{
         display: grid;
         grid-template-columns: auto;
-        grid-template-rows: 400px 1900px 100px;
+        grid-template-rows: 400px 1600px 100px;
         grid-template-areas:
         "hd hd hd hd"
         "sd sd main main"
@@ -57,11 +57,11 @@ body{
 }
 
 /* Large Screens */
-@media(min-width: 801px){
+@media(min-width: 901px){
     .container {
         display: grid;
         grid-template-columns: auto;
-        grid-template-rows: 400px 1200px 100px;
+        grid-template-rows: 400px 1000px 100px;
         grid-template-areas:
         "hd hd hd hd"
         "sd sd main main"
@@ -261,6 +261,29 @@ p{
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-instagram {
+    background: dimgrey;
+    color: white;
+}
+
+.fa-linkedin {
+    background: dimgrey;
+    color: white;
 }
 
 

@@ -3,7 +3,7 @@ body{
 }
 
 /* Smallest Screens */
-@media(min-width: 280px) and (max-width: 320px){
+@media(min-width: 280px) and (max-width: 380px){
     .container{
         display: grid;
         height: 100%;
@@ -17,7 +17,7 @@ body{
     }
 }
 /* Small Screens */
-@media(min-width: 320px) and (max-width: 412px){
+@media(min-width: 381px) and (max-width: 512px){
     .container{
         display: grid;
         height: 100%;
@@ -31,13 +31,12 @@ body{
     }
 }
 
-
 /* Medium Screens */
-@media(min-width: 413px) and (max-width: 900px){
+@media(min-width: 513px) and (max-width: 955px){
     .container {
         display: grid;
         grid-template-columns: auto;
-        grid-template-rows: 200px 350px 350px 1250px 100px;
+        grid-template-rows: 200px 350px 350px 1500px 100px;
         grid-template-areas:
         "hd"
         "fb"
@@ -49,7 +48,7 @@ body{
 }
 
 /* Large Screens */
-@media(min-width: 901px){
+@media(min-width: 956px){
     .container {
         display: grid;
         grid-template-columns: auto;
@@ -199,5 +198,28 @@ h1{
     /*text-underline: #1f1f1f;*/
 }
 
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-instagram {
+    background: dimgrey;
+    color: white;
+}
+
+.fa-linkedin {
+    background: dimgrey;
+    color: white;
+}
 
 
