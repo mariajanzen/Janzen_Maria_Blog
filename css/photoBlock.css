@@ -1,0 +1,16 @@
+
+#direction{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+.photoBox{
+    width: 210px;
+    height: 340px;
+    /*border: 1px solid saddlebrown;*/
+    background: #f5f5fb;
+    color: #1f1f1f;
+    margin-right: 10px;
+    /*text-underline: #1f1f1f;*/
+}
