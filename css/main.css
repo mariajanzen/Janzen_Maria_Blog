@@ -1,0 +1,14 @@
+body{
+    background-color: #f5f5fb;
+}
+
+p{
+    margin: 0 0 1em 0;
+}
+
+#textBlock{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    font-family: "Baskerville Old Face";
+}
